@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{
+    box-sizing: border-box;
+}
+/*
+===================
+**body**
+=================== 
+*/
+body{
+    font-family: 'Carter One', sans-serif, monospace;
+    margin: 50px 0 0;
+    line-height: 1.5;
+    background-image: url('https://wow.zamimg.com/images/news/articles/shadowlands/UI_MainMenu_Shadowlands_Simple_000_Widescreen.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+/*
+===================
+**NAV & HEADER **
+=================== 
+*/
+nav{
+    background-color: #7a7462;
+    display:flex;
+    justify-content: center;
+    padding: 15px;
+    position: fixed;
+    width:100%;
+    left:0;
+    right: 0;
+    top:0;
+}
+img{
+    max-width: 100%;
+}
+section h2{
+    text-align: center;
+    margin-top:40px;
+}
+.container{
+    display:flex;
+    max-width: 900px;
+    margin:0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn{
+    background-color:rgb(209, 47, 47) ;
+    text-transform: uppercase;
+    color:yellow;
+    text-decoration: none;
+    padding:12px 15px;
+    border-radius: 12px;
+    box-shadow:2px 2px 2px #360404;
+    border: 1px solid yellow;
+    display:inline-block;
+    transition: all 0.1s ease;
+}
+.btn:hover{
+    background-color: red;
+    color:rgb(246, 252, 160);
+}
+.btn:active{
+    box-shadow:0 0 0 #360404;
+    transform: translate(3px, 3px);
+}
+.btn:last-child{
+    background-color: rgb(175, 175, 175);
+    text-transform: uppercase;
+    color:yellow;
+    text-decoration: none;
+    padding:12px 15px;
+    border-radius: 12px;
+    box-shadow:2px 2px 2px rgb(27, 27, 27);
+    display:inline-block;
+    transition: all 0.1s ease;
+}
+.btn:last-child:hover{
+    background-color: rgb(56, 56, 55);
+    color:white;
+}
+.btn:last-child:active{
+    box-shadow:0 0 0 rgb(27, 27, 27);
+    transform: translate(3px, 3px);
+}
+.nav-link{
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+.nav-link:hover{
+    border-radius:30%;
+    border-top:3px solid red;
+    border-bottom:3px solid red;
+}
+.header-left{
+    width:70%;
+}
+.header-left h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 70px;
+}
+.header-left h1:hover{
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+}
+.header-right{
+    width: 30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+===================
+**PRODUCTS SECTION**
+=================== 
+*/
+.product{
+    width:29%;
+    margin:20px 2%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color:  #a59b7c;
+    color:black;
+}
+.product h2{
+    font-size:20px;
+    text-transform: uppercase;
+}
+.product p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.product img{
+    border-radius:40%;
+}
+.product-btn{
+    font-size: 20px;
+    background-color:rgb(71, 146, 56) ;
+    text-transform: uppercase;
+    color:yellow;
+    text-decoration: none;
+    padding:12px 15px;
+    border-radius: 12px;
+    box-shadow:2px 2px 2px #00cf1c;
+    border: 1px solid yellow;
+    display:block;
+    transition: all 0.1s ease;
+}
+.product-btn:hover{
+    background-color: rgb(38, 0, 255);
+    color:rgb(255, 155, 155);
+}
+.product-btn:active{
+    box-shadow:0 0 0 #10006d;
+    transform: translate(3px, 3px);
+}
+/*
+===================
+**VIDEO SECTION**
+=================== 
+*/
+iframe{
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+/*
+===================
+**JOIN SECTION**
+=================== 
+*/
+form{
+    margin-bottom: 40px;
+}
+form p{
+    text-align: center;
+}
+form input{
+    padding: 10px 25px;
+    border: 0;
+    color:black;
+    border-radius: 5px;
+    font-family: inherit;
+    display: inline-block;
+    font-size: 14px;
+    flex:1;
+    margin-right: 10px;
+}
+form button{
+    font-family: inherit;
+}
+.bg-yellow{
+    background-color: #a59b7c;
+}
+form .flex{
+    display: flex;
+    flex-wrap:wrap;
+}
+/*
+===================
+**FOOTER**
+=================== 
+*/
+footer{
+    text-transform: uppercase;
+    background-color:black;
+    color:#7a7462;
+    padding:10px;
+    text-align: center;
+}
+/*
+========================
+**MEDIA FOR RESPONSIVE**
+========================
+*/
+@media (max-width: 480px){
+    .header-left, .header-right{
+        width:100%;
+    }
+    .header-right{
+        order: 0;
+        margin-top:50px;
+    }
+    .header-left{
+        order: 1;
+        text-align: center;
+        padding: 20px;
+    }
+    .header-left h1{
+        display:none;
+    }
+    .feature{
+        width:100%;
+        margin:10px;
+    }
+    .flex input, .flex .join-btn{
+        width: 100%;
+        margin: 5px 10px;
+    }
+}
